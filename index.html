@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zona Tech</title>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+            <nav class="topbar" aria-label="Navegacion principal">
+                <a class="brand" href="#inicio">Zona Tech</a>
+                <div class="topbar__links">
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#beneficios">Beneficios</a>
+                    <a href="#inscripcion">Inscripcion</a>
+                    <a href="#contacto">Contactanos</a>
+                </div>
+            </nav>
+
+            <section class="hero__grid" id="inicio">
+                <div class="hero__text">
+                    <p class="eyebrow">Evento de tecnologia estudiantil</p>
+                    <h1>Bienvenido a Zona Tech</h1>
+                    <p class="hero__lead">
+                        Un espacio donde estudiantes presentan proyectos innovadores al publico general
+                        y a profesionales del area tecnologica.
+                    </p>
+                    <div class="hero__actions">
+                        <a class="button button--primary" href="#inscripcion">Quiero participar</a>
+                        <a class="button button--secondary" href="#proyectos">Ver actividades</a>
+                    </div>
+                </div>
+
+                <div class="hero__card">
+                    <img src="imagenes/robot.jpg" alt="Robot representando innovacion tecnologica">
+                    <div class="hero__card-text">
+                        <h2>Te invitamos a participar del evento</h2>
+                        <p>
+                            Descubre prototipos, automatizacion, computacion creativa y propuestas
+                            desarrolladas por estudiantes.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <section class="card">
+        <img src="imagenes/tecnologia.jpg" alt="Imagen representando tecnologia y creatividad">
+        <div class="card__text">
+            <h2>Un evento para compartir conocimiento</h2>
+            <p>
+                Zona Tech es una oportunidad para que estudiantes y profesionales se reunan
+                a compartir ideas, proyectos y experiencias en un ambiente abierto y colaborativo.
+            </p>
+        </div>
+
+    </section>
+    <main>
+        <section class="section section--light">
+            <div class="container intro">
+                <div>
+                    <p class="section-tag">Sobre el evento</p>
+                    <h2>Una experiencia abierta, dinamica y cercana</h2>
+                </div>
+                <p>
+                    Queremos acercar la tecnologia a la comunidad a traves de exhibiciones,
+                    demostraciones y espacios de conversacion con estudiantes y profesionales.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="proyectos">
+            <div class="container">
+                <p class="section-tag">Contenido destacado</p>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Actividades</h3>
+                        <p>Charlas, muestras interactivas y presentaciones en vivo durante toda la jornada.</p>
+                    </article>
+                    <article class="card" id="beneficios">
+                        <h3>Beneficios</h3>
+                        <p>Conecta con nuevos talentos, conoce ideas reales y explora tendencias tecnicas actuales.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Inscripciones</h3>
+                        <p>Participa como visitante o expositor en una experiencia pensada para compartir conocimiento.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--accent">
+            <div class="container showcase">
+                <div class="showcase__text">
+                    <p class="section-tag">Areas del evento</p>
+                    <h2>Proyectos que combinan creatividad y tecnologia</h2>
+                    <ul class="feature-list">
+                        <li>Robots y automatizacion</li>
+                        <li>Computacion aplicada</li>
+                        <li>Proyectos colaborativos</li>
+                    </ul>
+                </div>
+                <div class="stats">
+                    <div class="stat-box">
+                        <strong>+20</strong>
+                        <span>proyectos estudiantiles</span>
+                    </div>
+                    <div class="stat-box">
+                        <strong>3</strong>
+                        <span>areas tematicas</span>
+                    </div>
+                    <div class="stat-box">
+                        <strong>1</strong>
+                        <span>comunidad reunida</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="inscripcion">
+            <div class="container signup">
+                <div class="signup__intro">
+                    <p class="section-tag">Inscripcion</p>
+                    <h2>Reserva tu lugar en Zona Tech</h2>
+                    <p>
+                        Completa tus datos para recibir informacion del evento,
+                        actividades y futuras convocatorias.
+                    </p>
+                </div>
+
+                <form class="form" action="#" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+
+                    <label for="opinion">Tu Opinion</label>
+                    <textarea id="opinion" name="opinion" placeholder="Escribe porque quieres participar" required></textarea>
+
+                    <label for="intereses">Areas de interes</label>
+                    <select id="intereses" name="intereses" required>
+                        <option value="">Selecciona una opcion</option>
+                        <option value="robots">Robots y automatizacion</option>
+                        <option value="computacion">Computacion aplicada</option>
+                        <option value="colaborativo">Proyectos colaborativos</option>   
+                    </select>
+
+                    <button type="submit" class="button button--primary">Enviar inscripcion</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+        <div class="container footer__content">
+            <p>Zona Tech</p>
+            <p>Contactanos para resolver preguntas frecuentes y obtener mas informacion del evento.</p>
+        </div>
+    </footer>
+</body>
+</html>
