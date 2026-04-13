@@ -2,3 +2,5 @@ el primer promt es para agregarle diseño visual a la pagina y se adapte a panta
 
 la ia agrego lo siguiente edito el html y el css mejoro la estructura ahora se ve mas profesional y corrigio el problema de organizacion principal
 agrego diseño responsive y dejo corrido el posicionamiento de texto y imagen
+
+evaluacion (útil)
